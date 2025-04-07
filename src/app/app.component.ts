@@ -53,8 +53,7 @@ import { PrimaryButtonComponent } from './components/primary-button/primary-butt
 
   `,
   imports: [
-    ChangeDetectionDemoComponent,
-    AsyncPipe,
+    ChangeDetectionDemoComponent,    
     BellComponent,
     PrimaryButtonComponent,
   ],

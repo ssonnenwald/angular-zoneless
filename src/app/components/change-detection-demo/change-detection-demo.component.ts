@@ -78,7 +78,7 @@ import { BellComponent } from '../bell/bell.component';
 
 
   `,
-  imports: [PrimaryButtonComponent, AsyncPipe, NgClass, BellComponent],
+  imports: [PrimaryButtonComponent, AsyncPipe, BellComponent],
 })
 export class ChangeDetectionDemoComponent {
   propertyData = 'Property Data';
