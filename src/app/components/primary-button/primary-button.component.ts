@@ -6,17 +6,15 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <button
-      class="border-2 py-1 px-3 rounded-xl hover:bg-slate-200 w-fit text-slate-700"
+      class="border-2 border-slate-200 py-1 px-3 rounded-xl hover:bg-slate-200 w-fit text-slate-700"
     >
       <ng-content />
     </button>
   `,
   styles: `
-  
-  :host {
-    display: block;
-  }
-
+    :host {
+      display: block;
+    }
   `,
 })
 export class PrimaryButtonComponent {}

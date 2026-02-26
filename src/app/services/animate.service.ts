@@ -10,13 +10,13 @@ export class AnimateService {
   animateBell(element: HTMLElement) {
     this.zone.runOutsideAngular(() => {
       animate(
-        element,
+        element as any,
         {
-          transform: ['rotate(45deg)', 'rotate(-45deg)', 'none'],
-        },
+          rotate: ['45deg', '-45deg', '0deg'],
+        } as any,
         {
           offset: [0, 0.5, 1],
-        }
+        } as any,
       );
     });
   }

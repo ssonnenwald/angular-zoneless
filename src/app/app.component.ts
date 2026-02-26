@@ -1,10 +1,4 @@
-import {
-  Component,
-  afterRender,
-  inject,
-  signal,
-  viewChild,
-} from '@angular/core';
+import { Component, inject, signal, viewChild } from '@angular/core';
 import { ChangeDetectionDemoComponent } from './components/change-detection-demo/change-detection-demo.component';
 import { AsyncPipe } from '@angular/common';
 import { BellComponent } from './components/bell/bell.component';
@@ -46,14 +40,12 @@ import { PrimaryButtonComponent } from './components/primary-button/primary-butt
     </div>
   `,
   styles: `
-
     :host {
       height: 100vh;
     }
-
   `,
   imports: [
-    ChangeDetectionDemoComponent,    
+    ChangeDetectionDemoComponent,
     BellComponent,
     PrimaryButtonComponent,
   ],
@@ -65,10 +57,10 @@ export class AppComponent {
   childOneInput = 'Input Data';
   childTwoInput = signal('Input Data');
 
-  constructor() {
-    afterRender(() => {
-      this.renderBell().ring();
-    });
+  constructor() {}
+
+  ngAfterViewInit() {
+    this.renderBell().ring();
   }
 
   ngAfterViewChecked() {

@@ -9,7 +9,7 @@ import { BellComponent } from '../bell/bell.component';
   standalone: true,
   template: `
     <div
-      class="p-5 min-w-full grid grid-cols-2 grid-rows-2 gap-8 relative border-2 rounded"
+      class="p-5 min-w-full grid grid-cols-2 grid-rows-2 gap-8 relative border-2 border-slate-200 rounded"
     >
       <div
         class="rounded-xl bg-slate-100 shadow-lg p-6 flex flex-col justify-center items-center gap-6"
@@ -73,11 +73,7 @@ import { BellComponent } from '../bell/bell.component';
       />
     </div>
   `,
-  styles: `
-  
-
-
-  `,
+  styles: ``,
   imports: [PrimaryButtonComponent, AsyncPipe, BellComponent],
 })
 export class ChangeDetectionDemoComponent {
